@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floricultura Bloom - florescendo Seu Dia</title>
+
+  <!-- Fonts e CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <section class="elements-header">
+      <a href="#" class="logo"><img src="assets/logo.png" alt="Logo da Floricultura Bloom"></a>
+      <nav class="navbar">
+        <a href="#">Início</a>
+        <a href="#about">Sobre</a>
+        <a href="#menu">Produtos</a>
+        <a href="#review">Depoimentos</a>
+        <a href="#address">Localização</a>
+      </nav>
+      <div class="menu-btn" onclick="toggleNavbar()">☰</div>
+    </section>
+  </header>
+
+  <!-- Home -->
+  <div class="home-container">
+    <section id="home">
+      <div class="content">
+        <h2>NÓS SOMOS</h2>
+        <h1>A MELHOR FLORICULTURA</h1>
+        <p>florescendo seu dia, florescendo seu sorriso!</p>
+        <a href="#menu" class="btn">Encomende Agora!</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Sobre -->
+  <section class="about" id="about">
+    <h2 class="title">Sobre <span>Nós</span></h2>
+    <div class="row">
+      <div class="container-image">
+        <img src="assets/about-img.jpg" alt="Ambiente acolhedor da Floricultura Bloom">
+      </div>
+      <div class="content">
+        <h3>A Beleza das Flores</h3>
+        <p>Nossa floricultura oferece arranjos e buquês exclusivos, cuidadosamente selecionados para trazer alegria e
+          beleza ao seu dia. Com flores frescas e um ambiente acolhedor, convidamos você a conhecer a delicadeza da
+          natureza.</p>
+        <a href="#menu" class="btn">Veja Nossos Arranjos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section class="menu" id="menu">
+    <h2 class="title">Nossos <span>Produtos</span></h2>
+    <div class="box-container">
+      <div class="box">
+        <img src="assets/menu-1.png" alt="Buquê de Rosas">
+        <h3>Buquê de Rosas</h3>
+        <div class="price">R$ 49,99</div>
+        <a href="https://wa.me/5548991056014?text=Olá, gostaria de pedir um Buquê de Rosas." class="btn">Fazer
+          Pedido</a>
+      </div>
+      <div class="box">
+        <img src="assets/menu-2.png" alt="Arranjo de Tulipas">
+        <h3>Arranjo de Tulipas</h3>
+        <div class="price">R$ 59,99</div>
+        <a href="https://wa.me/5548991056014?text=Olá, gostaria de pedir um Arranjo de Tulipas." class="btn">Fazer
+          Pedido</a>
+      </div>
+      <div class="box">
+        <img src="assets/menu-3.png" alt="Orquídeas">
+        <h3>Orquídeas</h3>
+        <div class="price">R$ 89,99</div>
+        <a href="https://wa.me/5548991056014?text=Olá, gostaria de pedir uma Orquídea." class="btn">Fazer Pedido</a>
+      </div>
+        <div class="box">
+          <img src="assets/menu-4.png" alt="Combo: Flores e Chocolate">
+          <h3>Combo 1</h3>
+          <p>Flores e Chocolate</p>
+          <div class="price">R$ 109,99</div>
+          <a href="https://wa.me/5548991056014?text=Olá, gostaria de pedir o Combo com Flores e Chocolate."
+            class="btn">Fazer Pedido</a>
+        </div>
+        <div class="box">
+          <img src="assets/menu-5.png" alt="Combo: Flores, Urso e Chocolate">
+          <h3>Combo 2</h3>
+          <p>Flores, Urso e Chocolate</p>
+          <div class="price">R$ 179,99</div>
+          <a href="https://wa.me/5548991056014?text=Olá, gostaria de pedir o Combo com Flores, Urso e Chocolate." class="btn">Fazer
+            Pedido</a>
+        </div>
+        <div class="box">
+          <img src="assets/menu-6.png" alt="Combo: Vinho, chocolate e Flores">
+          <h3>Combo 3</h3>
+          <p>Caixa com Vinho, Chocolate e Flores</p>
+          <div class="price">R$ 289,99</div>
+          <a href="https://wa.me/5548991056014?text=Olá, gostaria de pedir o Combo com Vinho, Chocolate e Flores." class="btn">Fazer
+            Pedido</a>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="review" id="review">
+    <h2 class="title">Depoimentos dos <span>Clientes</span></h2>
+    <div class="box-container">
+      <div class="box">
+        <img class="quote" src="assets/quote-img.png" alt="Comentário de cliente">
+        <p>"Flores de ótima qualidade e um atendimento maravilhoso! Recomendo a todos!"</p>
+        <img src="assets/pic-1.png" alt="Foto do cliente Laura Mendes" class="user">
+        <h3>Laura Mendes</h3>
+      </div>
+      <div class="box">
+        <img class="quote" src="assets/quote-img.png" alt="Comentário de cliente">
+        <p>"A seleção de flores é incrível, perfeita para presentes. Ambiente agradavel!"</p>
+        <img src="assets/pic-2.png" alt="Foto do cliente Carlos Almeida" class="user">
+        <h3>Carlos Almeida</h3>
+      </div>
+        <div class="box">
+          <img class="quote" src="assets/quote-img.png" alt="Comentário de cliente">
+          <p>"Experiência incrível! O atendimento é super atencioso e as flores são maravilhosas. Super recomendo!"</p>
+          <img src="assets/pic-3.png" alt="Foto do cliente Fernanda Souza" class="user">
+          <h3>Fernanda Souza</h3>
+        </div>
+    </div>
+  </section>
+
+  <!-- Localização -->
+  <section class="address" id="address">
+    <h2 class="title">Onde <span>Estamos</span></h2>
+    <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen=""
+      loading="lazy"></iframe>
+  </section>
+
+  <!-- Rodapé -->
+  <section class="footer">
+    <div class="share">
+      <a href="mailto:gabriela.bade@hotmail.com" target="_blank">
+        <img src="https://img.icons8.com/?size=100&id=Y2GfpkgYNp42&format=png&color=f47682" alt="Email">
+      </a>
+      <a href="https://www.instagram.com/incrivilhosa/" target="_blank">
+        <img src="https://img.icons8.com/?size=100&id=dz63urxyxSdO&format=png&color=f47682" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/GabrielaBaptistaBade/" target="_blank">
+        <img src="https://img.icons8.com/?size=100&id=118491&format=png&color=f47682" alt="Facebook">
+      </a>
+      <a href="https://wa.me/5548991056014?text=Olá, vim através do seu site." target="_blank">
+        <img src="https://img.icons8.com/?size=100&id=16733&format=png&color=f47682" alt="Whatsapp">
+      </a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
