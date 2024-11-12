@@ -226,9 +226,11 @@ header {
   font-size: 2rem;
   margin: 1rem 0;
 }
-.menu .box p{
+
+.menu .box p {
   color: var(--black);
 }
+
 .menu .box .price {
   color: var(--main-color);
   font-size: 2.5rem;
@@ -246,9 +248,11 @@ header {
   font-size: 1.5rem;
   line-height: 1.8;
 }
-.review .box h3{
+
+.review .box h3 {
   color: var(--main-color)
 }
+
 .address iframe {
   width: 100%;
   height: 450px;
