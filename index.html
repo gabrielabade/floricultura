@@ -5,7 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Floricultura Bloom - florescendo Seu Dia</title>
-
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Floricultura Bloom - trazendo a beleza e a delicadeza das flores para o seu dia! Descubra arranjos, buquês e combinações exclusivas para todas as ocasiões.">
+  <meta name="keywords" content="floricultura, flores, arranjos, buquês, Bloom, natureza, beleza, presentes, decoração">
+  <meta name="author" content="Gabriela Baptista Bade">
+  <!-- Open Graph Meta Tags (para redes sociais) -->
+  <meta property="og:title" content="Floricultura Bloom - Florescendo Seu Dia">
+  <meta property="og:description"
+    content="Descubra a beleza das flores com a Floricultura Bloom! Arranjos exclusivos e atendimento personalizado.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:url" content="https://seusite.com">
+  <meta property="og:type" content="website">
   <!-- Fonts e CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -13,21 +24,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <!-- Ícone da aba -->
+  <link rel="icon" href="assets/logo.png" type="image/png">
 </head>
 
 <body>
   <!-- Header -->
   <header class="header">
     <section class="elements-header">
-      <a href="#" class="logo"><img src="assets/logo.png" alt="Logo da Floricultura Bloom"></a>
-      <nav class="navbar">
+      <a href="#" class="logo" aria-label="Página Inicial"><img src="assets/logo.png"
+          alt="Logo da Floricultura Bloom"></a>
+      <nav class="navbar" aria-label="Menu de Navegação">
         <a href="#">Início</a>
         <a href="#about">Sobre</a>
         <a href="#menu">Produtos</a>
         <a href="#review">Depoimentos</a>
         <a href="#address">Localização</a>
       </nav>
-      <div class="menu-btn" onclick="toggleNavbar()">☰</div>
+      <div class="menu-btn" onclick="toggleNavbar()" aria-label="Abrir menu de navegação">☰</div>
     </section>
   </header>
 
@@ -44,8 +58,8 @@
   </div>
 
   <!-- Sobre -->
-  <section class="about" id="about">
-    <h2 class="title">Sobre <span>Nós</span></h2>
+  <section class="about" id="about" aria-labelledby="about-title">
+    <h2 class="title" id="about-title">Sobre <span>Nós</span></h2>
     <div class="row">
       <div class="container-image">
         <img src="assets/about-img.jpg" alt="Ambiente acolhedor da Floricultura Bloom">
@@ -55,14 +69,14 @@
         <p>Nossa floricultura oferece arranjos e buquês exclusivos, cuidadosamente selecionados para trazer alegria e
           beleza ao seu dia. Com flores frescas e um ambiente acolhedor, convidamos você a conhecer a delicadeza da
           natureza.</p>
-        <a href="#menu" class="btn">Veja Nossos Arranjos</a>
+        <a href="#menu" class="btn" aria-label="Veja Nossos Arranjos">Veja Nossos Arranjos</a>
       </div>
     </div>
   </section>
 
   <!-- Produtos -->
-  <section class="menu" id="menu">
-    <h2 class="title">Nossos <span>Produtos</span></h2>
+  <section class="menu" id="menu" aria-labelledby="menu-title">
+    <h2 class="title" id="menu-title">Nossos <span>Produtos</span></h2>
     <div class="box-container">
       <div class="box">
         <img src="assets/menu-1.png" alt="Buquê de Rosas">
@@ -116,24 +130,24 @@
   </section>
 
   <!-- Depoimentos -->
-  <section class="review" id="review">
-    <h2 class="title">Depoimentos dos <span>Clientes</span></h2>
+  <section class="review" id="review" aria-labelledby="review-title">
+    <h2 class="title" id="review-title">Depoimentos dos <span>Clientes</span></h2>
     <div class="box-container">
-      <div class="box">
+      <div class="box" role="article">
         <img class="quote" src="assets/quote-img.png" alt="Comentário de cliente">
         <p>"Flores de ótima qualidade e um atendimento maravilhoso! Recomendo a todos!"</p>
         <img src="assets/pic-1.png" alt="Foto do cliente Laura Mendes" class="user">
         <h3>Laura Mendes</h3>
         <img src="assets/star.png" alt="avaliação 5 estrelas" width="100">
       </div>
-      <div class="box">
+      <div class="box" role="article">
         <img class="quote" src="assets/quote-img.png" alt="Comentário de cliente">
         <p>"A seleção de flores é incrível, perfeita para presentes. Ambiente agradavel!"</p>
         <img src="assets/pic-2.png" alt="Foto do cliente Carlos Almeida" class="user">
         <h3>Carlos Almeida</h3>
         <img src="assets/star.png" alt="avaliação 5 estrelas" width="100">
       </div>
-      <div class="box">
+      <div class="box" role="article">
         <img class="quote" src="assets/quote-img.png" alt="Comentário de cliente">
         <p>"Experiência incrível! O atendimento é super atencioso e as flores são maravilhosas. Super recomendo!"</p>
         <img src="assets/pic-3.png" alt="Foto do cliente Fernanda Souza" class="user">
@@ -144,32 +158,32 @@
   </section>
 
   <!-- Localização -->
-  <section class="address" id="address">
-    <h2 class="title">Onde <span>Estamos</span></h2>
+  <section class="address" id="address" aria-labelledby="address-title">
+    <h2 class="title" id="address-title">Onde <span>Estamos</span></h2>
     <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen=""
-      loading="lazy"></iframe>
+      loading="lazy" title="Mapa de Localização da Floricultura Bloom"></iframe>
   </section>
 
   <!-- Rodapé -->
-  <section class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="share">
-      <a href="mailto:gabriela.bade@hotmail.com" target="_blank">
+      <a href="mailto:gabriela.bade@hotmail.com" target="_blank" aria-label="Enviar Email">
         <img src="https://img.icons8.com/?size=100&id=Y2GfpkgYNp42&format=png&color=f47682" alt="Email">
 
       </a>
-      <a href="https://www.instagram.com/incrivilhosa/" target="_blank">
+      <a href="https://www.instagram.com/incrivilhosa/" target="_blank" aria-label="Ir para Instagram">
         <img src="https://img.icons8.com/?size=100&id=dz63urxyxSdO&format=png&color=f47682" alt="Instagram">
       </a>
-      <a href="https://www.facebook.com/GabrielaBaptistaBade/" target="_blank">
+      <a href="https://www.facebook.com/GabrielaBaptistaBade/" target="_blank" aria-label="Ir para Facebook">
         <img src="https://img.icons8.com/?size=100&id=118491&format=png&color=f47682" alt="Facebook">
       </a>
-      <a href="https://wa.me/5548991056014?text=Olá, vim através do seu site." target="_blank">
+      <a href="https://wa.me/5548991056014?text=Olá, vim através do seu site." target="_blank" aria-label="Chamar no Whatsapp">
         <img src="https://img.icons8.com/?size=100&id=16733&format=png&color=f47682" alt="Whatsapp">
       </a>
     </div>
-  </section>
+  </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 
 </html>

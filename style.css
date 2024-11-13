@@ -32,6 +32,8 @@ header {
   background-color: var(--bg);
   z-index: 99;
   border-bottom: var(--border);
+  border-bottom: 0.2rem solid var(--border);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .elements-header {
@@ -53,9 +55,8 @@ header {
   flex-direction: row;
   position: relative;
   background-color: transparent;
-  transform: none;
-  transition: none;
-  margin-left: auto;
+  transition: background-color 0.3s, transform 0.4s ease;
+
 }
 
 .navbar a {
@@ -67,17 +68,16 @@ header {
 
 .navbar a:hover {
   color: var(--main-color);
-  border-bottom: 0.1rem solid var(--main-color);
+  border-bottom: 0.2rem solid var(--main-color);
 }
 
 .menu-btn {
-  font-size: 2rem;
+  font-size: 2.9rem;
   color: var(--black);
   display: none;
   cursor: pointer;
 }
 
-/* Home Container */
 .home-container {
   background: url("assets/home-img.jpg") center/cover no-repeat;
   height: 100vh;
@@ -106,18 +106,16 @@ header {
 .home-container h1 {
   font-size: 4rem;
   color: var(--white);
-  margin-bottom: rem;
-  padding: 0 1rem;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
 }
 
 .home-container p {
-  font-size: 3rem;
+  font-size: 2.4rem;
   color: var(--white);
   margin-bottom: 2rem;
-  padding: 0 1rem;
   font-family: "Borel", cursive;
   font-weight: 400;
-  font-style: normal;
 }
 
 .btn {
@@ -160,7 +158,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--secondary-color);
   border-radius: 0.5rem;
 }
 
@@ -184,13 +182,13 @@ header {
 
 .about .content h3 {
   font-size: 2rem;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 20px;
 }
 
 .about .content p {
   font-size: 1.6rem;
-  color: var(--white);
+  color: var(--black);
   line-height: 1.8;
   margin-bottom: 30px;
 }
@@ -253,7 +251,7 @@ header {
 }
 
 .review .box h3 {
-  color: var(--main-color);  
+  color: var(--main-color);
 }
 
 .address iframe {
@@ -279,12 +277,40 @@ header {
   width: 35px;
   margin: 0;
   cursor: pointer;
-  transition: background-color 0.9s;
+  transition: background-color 0.5s;
 }
 
 .footer .share img:hover {
   background-color: var(--main-color);
   border-radius: 50%;
+}
+
+/* Estilos específicos para IDs de títulos */
+#menu-title,
+#about-title,
+#review-title,
+#address-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+#menu-title::before,
+#about-title::before,
+#review-title::before,
+#address-title::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: var(--main-color);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
 }
 
 /* Responsividade */
