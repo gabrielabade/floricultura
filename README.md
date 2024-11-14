@@ -1,6 +1,6 @@
 # Floricultura Bloom - Florescendo Seu Dia
 
- O site foi projetado para oferecer uma experiência interativa, onde os usuários podem conhecer produtos, ler depoimentos e encontrar a localização.
+ O site foi projetado para oferecer uma experiência interativa, permitindo aos usuários explorar a floricultura, conhecer produtos, ler depoimentos e encontrar a localização com facilidade.
 
 ## Funcionalidades
 

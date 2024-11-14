@@ -46,123 +46,138 @@
   </header>
 
   <!-- Home -->
-  <div class="home-container">
-    <section id="home">
-      <div class="content">
-        <h2>NÓS SOMOS</h2>
-        <h1>A MELHOR FLORICULTURA</h1>
-        <p>florescendo seu dia, florescendo seu sorriso!</p>
-        <a href="#menu" class="btn">Encomende Agora!</a>
+  <main>
+    <div class="home-container">
+      <section id="home">
+        <div class="content">
+          <h2>NÓS SOMOS</h2>
+          <h1>A MELHOR FLORICULTURA</h1>
+          <p>florescendo seu dia, florescendo seu sorriso!</p>
+          <a href="#menu" class="btn">Encomende Agora!</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Sobre -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <h2 class="title" id="about-title">Sobre <span>Nós</span></h2>
+      <div class="row">
+        <div class="container-image">
+          <img src="assets/about-img.jpg" alt="Ambiente acolhedor da Floricultura Bloom">
+        </div>
+        <div class="content">
+          <h3>A Beleza das Flores</h3>
+          <p>Nossa floricultura oferece arranjos e buquês exclusivos, cuidadosamente selecionados para trazer alegria e
+            beleza ao seu dia. Com flores frescas e um ambiente acolhedor, convidamos você a conhecer a delicadeza da
+            natureza.</p>
+          <a href="#menu" class="btn" aria-label="Veja Nossos Arranjos">Veja Nossos Arranjos</a>
+        </div>
       </div>
     </section>
-  </div>
 
-  <!-- Sobre -->
-  <section class="about" id="about" aria-labelledby="about-title">
-    <h2 class="title" id="about-title">Sobre <span>Nós</span></h2>
-    <div class="row">
-      <div class="container-image">
-        <img src="assets/about-img.jpg" alt="Ambiente acolhedor da Floricultura Bloom">
-      </div>
-      <div class="content">
-        <h3>A Beleza das Flores</h3>
-        <p>Nossa floricultura oferece arranjos e buquês exclusivos, cuidadosamente selecionados para trazer alegria e
-          beleza ao seu dia. Com flores frescas e um ambiente acolhedor, convidamos você a conhecer a delicadeza da
-          natureza.</p>
-        <a href="#menu" class="btn" aria-label="Veja Nossos Arranjos">Veja Nossos Arranjos</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- Produtos -->
-  <section class="menu" id="menu" aria-labelledby="menu-title">
-    <h2 class="title" id="menu-title">Nossos <span>Produtos</span></h2>
-    <div class="box-container">
-      <div class="box">
-        <img src="assets/menu-1.png" alt="Buquê de Rosas">
-        <h3>Buquê de Rosas</h3>
-        <div class="price">R$ 49,99</div>
-        <a href="https://wa.me/5548991056014?text=Olá, gostaria de pedir um Buquê de Rosas." class="btn">Fazer
-          Pedido</a>
-      </div>
-      <div class="box">
-        <img src="assets/menu-2.png" alt="Arranjo de Tulipas">
-        <h3>Arranjo de Tulipas</h3>
-        <div class="price">R$ 59,99</div>
-        <a href="https://wa.me/5548991056014?text=Olá, gostaria de encomendar um Arranjo de Tulipas." class="btn">Fazer
-          Pedido</a>
-      </div>
-      <div class="box">
-        <img src="assets/menu-3.png" alt="Orquídeas">
-        <h3>Orquídeas</h3>
-        <div class="price">R$ 89,99</div>
-        <a href="https://wa.me/5548991056014?text=Olá, gostaria de encomendar uma Orquídea." class="btn">Fazer
-          Pedido</a>
-      </div>
-      <div class="box">
-        <img src="assets/menu-4.jpg" alt="Combo: Flores e Chocolate">
-        <h3>Combo 1</h3>
-        <p>Flores e Chocolate</p>
-        <div class="price">R$ 109,99</div>
-        <a href="https://wa.me/5548991056014?text=Olá, gostaria de encomendar o Combo com Flores e Chocolate."
-          class="btn">Fazer Pedido</a>
-      </div>
-      <div class="box">
-        <img src="assets/menu-5.png" alt="Combo: Flores, Urso e Chocolate">
-        <h3>Combo 2</h3>
-        <p>Flores, Urso e Chocolate</p>
-        <div class="price">R$ 179,99</div>
-        <a href="https://wa.me/5548991056014?text=Olá, gostaria de encomendar o Combo com Flores, Urso e Chocolate."
-          class="btn">Fazer
-          Pedido</a>
-      </div>
-      <div class="box">
-        <img src="assets/menu-6.webp" alt="Combo: Vinho, chocolate e Flores">
-        <h3>Combo 3</h3>
-        <p>Cesta com Vinho, Chocolate e Flores</p>
-        <div class="price">R$ 289,99</div>
-        <a href="https://wa.me/5548991056014?text=Olá, gostaria de encomendar o Combo com Vinho, Chocolate e Flores."
-          class="btn">Fazer
-          Pedido</a>
-      </div>
-    </div>
-    </div>
-  </section>
+    <!-- Produtos -->
+    <section class="menu" id="menu" aria-labelledby="menu-title">
+      <h2 class="title" id="menu-title">Nossos <span>Produtos</span></h2>
+      <div class="box-container">
 
-  <!-- Depoimentos -->
-  <section class="review" id="review" aria-labelledby="review-title">
-    <h2 class="title" id="review-title">Depoimentos dos <span>Clientes</span></h2>
-    <div class="box-container">
-      <div class="box" role="article">
-        <img class="quote" src="assets/quote-img.png" alt="Comentário de cliente">
-        <p>"Flores de ótima qualidade e um atendimento maravilhoso! Recomendo a todos!"</p>
-        <img src="assets/pic-1.png" alt="Foto do cliente Laura Mendes" class="user">
-        <h3>Laura Mendes</h3>
-        <img src="assets/star.png" alt="avaliação 5 estrelas" width="100">
-      </div>
-      <div class="box" role="article">
-        <img class="quote" src="assets/quote-img.png" alt="Comentário de cliente">
-        <p>"A seleção de flores é incrível, perfeita para presentes. Ambiente agradavel!"</p>
-        <img src="assets/pic-2.png" alt="Foto do cliente Carlos Almeida" class="user">
-        <h3>Carlos Almeida</h3>
-        <img src="assets/star.png" alt="avaliação 5 estrelas" width="100">
-      </div>
-      <div class="box" role="article">
-        <img class="quote" src="assets/quote-img.png" alt="Comentário de cliente">
-        <p>"Experiência incrível! O atendimento é super atencioso e as flores são maravilhosas. Super recomendo!"</p>
-        <img src="assets/pic-3.png" alt="Foto do cliente Fernanda Souza" class="user">
-        <h3>Fernanda Souza</h3>
-        <img src="assets/star.png" alt="avaliação 5 estrelas" width="100">
-      </div>
-    </div>
-  </section>
+        <article class="box">
+          <img src="assets/menu-1.png" alt="Buquê de Rosas">
+          <h3>Buquê de Rosas</h3>
+          <div class="price">R$ 49,99</div>
+          <a href="https://wa.me/5548991056014?text=Olá, gostaria de pedir um Buquê de Rosas." class="btn">Fazer
+            Pedido</a>
+        </article>
 
-  <!-- Localização -->
-  <section class="address" id="address" aria-labelledby="address-title">
-    <h2 class="title" id="address-title">Onde <span>Estamos</span></h2>
-    <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen=""
-      loading="lazy" title="Mapa de Localização da Floricultura Bloom"></iframe>
-  </section>
+        <article class="box">
+          <img src="assets/menu-2.png" alt="Arranjo de Tulipas">
+          <h3>Arranjo de Tulipas</h3>
+          <div class="price">R$ 59,99</div>
+          <a href="https://wa.me/5548991056014?text=Olá, gostaria de encomendar um Arranjo de Tulipas."
+            class="btn">Fazer
+            Pedido</a>
+        </article>
+
+        <article class="box">
+          <img src="assets/menu-3.png" alt="Orquídeas">
+          <h3>Orquídeas</h3>
+          <div class="price">R$ 89,99</div>
+          <a href="https://wa.me/5548991056014?text=Olá, gostaria de encomendar uma Orquídea." class="btn">Fazer
+            Pedido</a>
+        </article>
+
+        <article class="box">
+          <img src="assets/menu-4.jpg" alt="Combo: Flores e Chocolate">
+          <h3>Combo 1</h3>
+          <p>Flores e Chocolate</p>
+          <div class="price">R$ 109,99</div>
+          <a href="https://wa.me/5548991056014?text=Olá, gostaria de encomendar o Combo com Flores e Chocolate."
+            class="btn">Fazer Pedido</a>
+        </article>
+
+        <article class="box">
+          <img src="assets/menu-5.png" alt="Combo: Flores, Urso e Chocolate">
+          <h3>Combo 2</h3>
+          <p>Flores, Urso e Chocolate</p>
+          <div class="price">R$ 179,99</div>
+          <a href="https://wa.me/5548991056014?text=Olá, gostaria de encomendar o Combo com Flores, Urso e Chocolate."
+            class="btn">Fazer
+            Pedido</a>
+        </article>
+
+        <article class="box">
+          <img src="assets/menu-6.webp" alt="Combo: Vinho, chocolate e Flores">
+          <h3>Combo 3</h3>
+          <p>Cesta com Vinho, Chocolate e Flores</p>
+          <div class="price">R$ 289,99</div>
+          <a href="https://wa.me/5548991056014?text=Olá, gostaria de encomendar o Combo com Vinho, Chocolate e Flores."
+            class="btn">Fazer
+            Pedido</a>
+        </article>
+        
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="review" id="review" aria-labelledby="review-title">
+      <h2 class="title" id="review-title">Depoimentos dos <span>Clientes</span></h2>
+      <div class="box-container">
+
+        <article class="box" role="article">
+          <img class="quote" src="assets/quote-img.png" alt="Comentário de cliente">
+          <p>"Flores de ótima qualidade e um atendimento maravilhoso! Recomendo a todos!"</p>
+          <img src="assets/pic-1.png" alt="Foto do cliente Laura Mendes" class="user">
+          <h3>Laura Mendes</h3>
+          <img src="assets/star.png" alt="avaliação 5 estrelas" width="100">
+        </article>
+
+        <article class="box" role="article">
+          <img class="quote" src="assets/quote-img.png" alt="Comentário de cliente">
+          <p>"A seleção de flores é incrível, perfeita para presentes. Ambiente agradavel!"</p>
+          <img src="assets/pic-2.png" alt="Foto do cliente Carlos Almeida" class="user">
+          <h3>Carlos Almeida</h3>
+          <img src="assets/star.png" alt="avaliação 5 estrelas" width="100">
+        </article>
+
+        <article class="box" role="article">
+          <img class="quote" src="assets/quote-img.png" alt="Comentário de cliente">
+          <p>"Experiência incrível! O atendimento é super atencioso e as flores são maravilhosas. Super recomendo!"</p>
+          <img src="assets/pic-3.png" alt="Foto do cliente Fernanda Souza" class="user">
+          <h3>Fernanda Souza</h3>
+          <img src="assets/star.png" alt="avaliação 5 estrelas" width="100">
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Localização -->
+    <section class="address" id="address" aria-labelledby="address-title">
+      <h2 class="title" id="address-title">Onde <span>Estamos</span></h2>
+      <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;"
+        allowfullscreen="" loading="lazy" title="Mapa de Localização"></iframe>
+    </section>
+
+  </main>
 
   <!-- Rodapé -->
   <footer class="footer" role="contentinfo">
@@ -177,7 +192,8 @@
       <a href="https://www.facebook.com/GabrielaBaptistaBade/" target="_blank" aria-label="Ir para Facebook">
         <img src="https://img.icons8.com/?size=100&id=118491&format=png&color=f47682" alt="Facebook">
       </a>
-      <a href="https://wa.me/5548991056014?text=Olá, vim através do seu site." target="_blank" aria-label="Chamar no Whatsapp">
+      <a href="https://wa.me/5548991056014?text=Olá, vim através do seu site." target="_blank"
+        aria-label="Chamar no Whatsapp">
         <img src="https://img.icons8.com/?size=100&id=16733&format=png&color=f47682" alt="Whatsapp">
       </a>
     </div>
