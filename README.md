@@ -1,4 +1,4 @@
-# Floricultura Bloom - Florescendo Seu Dia
+# Landing Page - Floricultura Bloom
 
  O site foi projetado para oferecer uma experiência interativa, permitindo aos usuários explorar a floricultura, conhecer produtos, ler depoimentos e encontrar a localização com facilidade.
 
@@ -16,3 +16,7 @@
 - **HTML**
 - **CSS**
 - **JavaScript**
+
+## Como Visualizar
+Você pode ver a aplicação online [aqui](https://gabrielabade.github.io/floricultura/)
+![Preview do projeto](./assets/mockup-floricultura.png)
