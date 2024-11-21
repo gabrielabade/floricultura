@@ -6,7 +6,7 @@
 
 - **Página inicial**: Apresenta o conceito da floricultura e um botão para realizar pedidos.
 - **Sobre Nós**: Seção dedicada a apresentar a missão da floricultura, com imagem e descrição.
-- **Produtos**: Galeria com opções de arranjos, buquês e combom, preços e link para pedidos diretos via WhatsApp.
+- **Produtos**: Galeria com opções de arranjos, buquês e combos, preços e link para pedidos diretos via WhatsApp.
 - **Depoimentos**: Exibe opiniões de clientes satisfeitos, criando uma conexão de confiança.
 - **Localização**: Mapa interativo do Google Maps para encontrar a floricultura com facilidade.
 - **Redes Sociais**: Ícones de redes sociais e contato direto, para fácil acesso aos canais da floricultura.
@@ -19,4 +19,9 @@
 
 ## Como Visualizar
 Você pode ver a aplicação online [aqui](https://gabrielabade.github.io/floricultura/)
+
+<div> 
+
 ![Preview do projeto](./assets/mockup-floricultura.png)
+
+</div>
