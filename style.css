@@ -18,6 +18,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* Add smooth scrolling for better user experience */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--border);
   color: var(--white);
@@ -56,7 +61,6 @@ header {
   position: relative;
   background-color: transparent;
   transition: background-color 0.3s, transform 0.4s ease;
-
 }
 
 .navbar a {
@@ -128,6 +132,7 @@ header {
   transition: all 0.3s ease;
 }
 
+/* Improved button hover effects */
 .btn:hover {
   transform: scale(1.05);
   opacity: 0.9;
@@ -205,10 +210,23 @@ header {
   text-align: center;
   padding: 2rem;
   border-radius: 0.5rem;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 
-.menu .box img,
+/* Improve product image display */
+.menu .box img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+  transition: transform 0.3s;
+}
+
+.menu .box:hover img {
+  transform: scale(1.1);
+}
+
 .review .box .user {
   width: 100px;
   height: auto;
@@ -230,6 +248,7 @@ header {
 
 .menu .box p {
   color: var(--black);
+  margin-bottom: 1rem;
 }
 
 .menu .box .price {
@@ -242,6 +261,7 @@ header {
 .review .box:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: #f3dbe4;
 }
 
 .review .box p {
@@ -263,8 +283,100 @@ header {
 
 .footer {
   background-color: var(--bg);
-  padding: 2rem 0;
+  padding: 4rem 0 1rem 0;
+  color: var(--black);
+  border-top: 0.2rem solid var(--border);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-logo img {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+.footer-contact,
+.footer-hours,
+.footer-social {
+  margin-bottom: 2rem;
+}
+
+.footer h3 {
+  font-size: 1.8rem;
+  color: var(--main-color);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.footer h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--main-color);
+}
+
+.footer p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+  background-color: var(--main-color);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
   text-align: center;
+  margin-top: 2rem;
+}
+
+.footer-bottom p {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer .share {
@@ -283,6 +395,60 @@ header {
 .footer .share img:hover {
   background-color: var(--main-color);
   border-radius: 50%;
+}
+
+/* Add styles for the developer credit in footer */
+.developer-credit {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: var(--black);
+  padding: 1rem;
+}
+
+.developer-credit a {
+  color: var(--main-color);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.developer-credit a:hover {
+  text-decoration: underline;
+}
+
+/* Enhance accessibility with focus states */
+a:focus,
+button:focus {
+  outline: 2px solid var(--main-color);
+  outline-offset: 2px;
+}
+
+/* Add back-to-top button styles */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--main-color);
+  color: var(--white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 999;
+}
+
+.back-to-top.visible {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+  transform: translateY(-5px);
 }
 
 /* Estilos específicos para IDs de títulos */
@@ -392,6 +558,46 @@ header {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+  }
+
+  /* Ajustes adicionais para mobile */
+  .menu .box img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer .share {
+    flex-wrap: wrap;
+  }
+
+  .footer .share a {
+    margin: 0.5rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-icons {
+    justify-content: center;
   }
 }
 
